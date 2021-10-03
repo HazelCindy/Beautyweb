@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-landing',
@@ -34,11 +34,16 @@ export class LandingComponent implements OnInit {
     { name: 'Garnier Foundation', image: '../../assets/images/ladies-lingerie-top.jpg', price: 25, description: 'Some quick example text to build on the card title and make up the bulk of the card' },
 
   ];
+  cart: any[] = [];
 
 
   constructor() { }
 
   ngOnInit() {
+  }
+  Addtocart(prod: any){
+    this.cart.push(prod)
+    console.log(this.cart)
   }
 
 }

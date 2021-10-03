@@ -14,13 +14,19 @@
       </button>
       <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarResponsive">
         <ul class="navbar-nav ml-auto text-white">
-          <li class="nav-item active">
+          <!-- <li class="nav-item active">
             <a class="nav-link text-white" href="index.html">Home
               <span class="sr-only text-white">(current)</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link text-white" [routerLink]="'product'">Our Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" [routerLink]="'cart'">
+              <span><img src="../../assets/icons/cart.svg">Cart
+            </span>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="about.html">About Us</a>
@@ -32,7 +38,6 @@
       </div>
     </div>
   </nav>
-  <p class="text-white">Welcome to nana's shop where beauty is everything</p>
 </header>
 <div id="carouselExampleControls" class="carousel slide banner header-text" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -95,7 +100,9 @@
               <li><i class="fa fa-star"></i></li>
               <li><i class="fa fa-star"></i></li>
             </ul>
-            <span>Reviews (24)</span>
+            <span><button class="btn btn-sm btn-outline-primary" 
+              (click)="Addtocart(prod)"
+              ><i class="bi bi-cart"></i>Add to cart</button></span>
           </div>
         </div>
       </div>

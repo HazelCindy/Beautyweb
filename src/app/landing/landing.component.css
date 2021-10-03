@@ -18,26 +18,26 @@
 
 .banner-item-01 {
 	background-image: url('../../assets/images/beauty-products.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
+	/* background-size: cover;
+	background-repeat: no-repeat; */
+	/* background-position: center center; */
 	height: 50vh; 
 
 }
 
 .banner-item-02 {
 	background-image: url('../../assets/images/beauty-flatlay.jpg');
-	background-size: cover;
+	/* background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center center; */
 	height: 50vh; 
 }
 
 .banner-item-03 {
 	background-image: url('../../assets/images/background.jpg');
-	background-size: cover;
+	/* background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center center; */
 	height: 50vh; 
 
 }
@@ -309,4 +309,3 @@
 	border-color: #f33f3f;
 	color: #fff;
 }
-
