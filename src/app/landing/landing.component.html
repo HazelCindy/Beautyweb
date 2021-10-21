@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: 	#00008B">
-    <div class="container-fluid">
+    <div class="container">
       <div class=" p-1m d-flex justify-content-start" style="text-align: center;">
         <img src="../../assets/favicon.png"
           style="background-color: aliceblue; background-position: center; height: 4rem; width: 3rem;">
@@ -14,17 +14,12 @@
       </button>
       <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarResponsive">
         <ul class="navbar-nav ml-auto text-white">
-          <!-- <li class="nav-item active">
-            <a class="nav-link text-white" href="index.html">Home
-              <span class="sr-only text-white">(current)</span>
-            </a>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link text-white" [routerLink]="'product'">Our Products</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" [routerLink]="'cart'">
-              <span><img src="../../assets/icons/cart.svg">Cart
+              <span><img src="../../assets/icons/cart.svg">Cart <sup>{{cart.length}}</sup>
             </span>
             </a>
           </li>
@@ -100,7 +95,7 @@
               <li><i class="fa fa-star"></i></li>
               <li><i class="fa fa-star"></i></li>
             </ul>
-            <span><button class="btn btn-sm btn-outline-primary" 
+            <span><button class="btn btn-sm btn-outline-primary"
               (click)="Addtocart(prod)"
               ><i class="bi bi-cart"></i>Add to cart</button></span>
           </div>

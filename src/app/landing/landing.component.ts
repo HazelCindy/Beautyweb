@@ -1,4 +1,5 @@
 import { Component, OnInit, Output} from '@angular/core';
+import { ProductService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-landing',
@@ -37,12 +38,15 @@ export class LandingComponent implements OnInit {
   cart: any[] = [];
 
 
-  constructor() { }
+  constructor(
+    private _product: ProductService
+    ) { }
 
   ngOnInit() {
   }
   Addtocart(prod: any){
     this.cart.push(prod)
+    this._product.setProductList(this.cart);
     console.log(this.cart)
   }
 

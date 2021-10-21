@@ -1,5 +1,5 @@
 <div>
-  <header class="">
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: 	#00008B">
       <div class="container ">
         <div class=" p-1m d-flex justify-content-start" style="text-align: center;">
@@ -17,18 +17,14 @@
           <ul class="navbar-nav ml-auto text-white">
             <li class="nav-item active">
               <a class="nav-link text-white" href="index.html">Home
-                <span class="sr-only text-white">(current)</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" [routerLink]="['../cart']">
-                <span><img src="../../assets/icons/cart.svg">Cart
+                <span><img src="../../assets/icons/cart.svg">Cart <sup>{{cart.length}}</sup>
               </span>
               </a>
             </li>
-            <!-- <li class="nav-item active">
-              <a class="nav-link text-white" [routerLink]="'product'">Our Products</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link text-white" href="about.html">About Us</a>
             </li>
@@ -40,7 +36,7 @@
       </div>
     </nav>
   </header>
-  
+
   <!-- Page Content -->
   <div class="page-heading products-heading header-text">
     <div class="container">
@@ -54,7 +50,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="products">
     <div class="container">
       <div class="row">
@@ -87,14 +83,14 @@
                       <li><i class="fa fa-star"></i></li>
                       <li><i class="fa fa-star"></i></li>
                     </ul>
-                    <span><button class="btn btn-sm btn-outline-primary" 
+                    <span><button class="btn btn-sm btn-outline-primary"
                       (click)="Addtocart(prod)"
                       ><i class="bi bi-cart"></i>Add to cart</button></span>
                   </div>
                 </div>
               </div>
-            
-            
+
+
             </div>
           </div>
         </div>
@@ -110,15 +106,15 @@
       </div>
     </div>
   </div>
-  
-  
+
+
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="inner-content">
             <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
-  
+
               - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
           </div>
         </div>

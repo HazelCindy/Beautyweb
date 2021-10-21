@@ -1,0 +1,9 @@
+.card{
+  border-radius: 5px;
+  border-color: blue;
+}
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
